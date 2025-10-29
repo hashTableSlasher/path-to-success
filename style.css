@@ -1,0 +1,310 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,  div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+    text-decoration: none;
+}
+
+:root{
+    --teal: #4CA7C0;
+    --purple: #484FB7;
+    --lavender: #6B8FE7;
+    --yellow:#E9BB57;
+    --Pink: #D9526F;
+    --Dark-gray:#1E1E1E;
+    --white:#ffffff;
+    --box-shadow-lg: 3px 3px 4px 2px var(--Dark-gray);
+}
+
+
+body{
+    background-color: var(--lavender);
+    font-family: "Inter";
+    width: 450px;
+    max-width: 450px;
+    margin: 0 auto ;
+}
+header{
+    text-align: center;
+    margin:0 auto;
+}
+
+header section h1,p{
+    background-color: var(--purple);
+    color:var(--white);}
+
+    
+header section h1{
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+header section p{
+    padding-bottom: 40px;
+    font-style: italic;
+}
+nav{
+    background-color: var(--yellow);
+    padding-top:8px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    
+}
+
+nav h2{
+    font-family: "Inter";
+    color:var(--Dark-gray);
+    font-size: 1.7em;
+    font-weight: bold;
+    font-style: italic;
+    padding-bottom: 12px;
+}
+nav ul{
+    display:grid;
+    grid-template-columns: 1fr;
+    row-gap: 12px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+nav li{ 
+    width: 400px;
+    background-color: var(--white);
+    padding: 1em .3em;
+}
+nav li > a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color:var(--purple);
+    font-weight: bold;
+}
+main{   
+    background-color: var(--purple);
+}
+main p{
+    color:var(--Dark-gray);
+    line-height: 1.5;
+}
+
+h1,h2{
+    color:var(--white);
+    font-family: "Kavoon";
+}
+h1{
+    font-size: 3em;
+    text-align: center;
+}
+h2{ padding-top:12px;
+    padding-bottom: 6px;
+    font-size: 2em;
+    padding-left: 12px;
+}
+
+h3{
+    padding-left: 12px;
+    color:var(--yellow);
+    font-size: 1.5em ;
+    font-weight: bold;
+    
+}
+
+h4{
+    font-weight: bold;
+    font-size: 1.15em;
+    color:var(--purple);
+    padding-left: 12px;
+}
+
+.wtBox{
+    background-color: var(--white);
+    border-radius: 4%;
+    text-align: left;
+    padding:12px;
+    margin: 1em 1.5em;
+    border: 1em;
+}
+#OurServices h3{
+    padding: 0px .5em;
+}
+#OurServices img{
+    padding: 12px 12px;
+}
+#OurServices p{
+    background-color: var(--white);
+    padding: 12px 12px;
+}
+.whyChoose{
+    background-color: var(--Pink); 
+    display: inline-block;
+    
+    /* justify-content: space-evenly; */
+} 
+
+#grid-container{
+    background-color: var(--Pink);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-radius: 10%;
+    margin:14px;
+    gap: 16px;
+
+}
+.whyChoose h2{
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+
+div div{
+    /* justify-content: space-evenly; */
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    /* border: var(--Pink) 12p solid; */
+    padding: 35px 6px; 
+    border-radius: 15px;
+    color: var(--Dark-gray);
+}
+
+#grid-container .teal{
+    background-color: var(--teal);
+ 
+}
+#grid-container .lavender{
+    background-color: var(--lavender);
+}
+#grid-container .yellow{
+    background-color: var(--yellow);
+}
+#grid-container .white{
+    background-color: var(--white);
+} 
+.pricing h3 {
+    padding:1px;
+}
+
+section table{
+    background-color: var(--purple);
+    display:grid;
+    justify-content: center;
+    padding:10px;
+    
+}
+table .titles {
+    background-color: var(--yellow);
+    font-weight: bold;
+    font-size: medium;
+    text-transform: uppercase;
+    color:var(--Dark-gray);
+}
+
+table tr,td,th{
+    border: 2px solid var(--yellow);
+    background-color: var(--white);
+    padding: 15px 15px;
+}
+
+
+
+
+.first-step{
+    background-color: var(--Pink);
+    color: var(--white);
+    padding:8px 5px;
+    display:flex;
+    flex-wrap:wrap;
+    text-align: left;
+
+}
+
+.first-step  button {
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--white); 
+    color: var(--Dark-gray);
+    font-weight: bold;
+    font-size: medium;
+    text-transform: uppercase;
+    padding: 25px 130px;
+    border: 0;
+    border-radius: 15px;
+    align-items: center;
+    box-shadow: var(--box-shadow-lg);
+    margin: auto;
+    
+}
+.first-step h2{
+    padding-bottom: 3px;
+}
+
+.first-step p{
+    color:var(--white);
+    background-color: var(--Pink);
+    padding: 7px 12px;
+}
+footer{
+    margin-bottom: 2rem;
+    padding: 55px;
+    background-color: var(--purple);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--white);
+    display:grid;
+    gap:12px;
+    font-size: smaller;
+    
+   
+}
+footer a{
+    /* color: var(--white); */
+    text-align: center;
+    display: inline;
+    text-decoration: underline;
+    
+    
+}
+
+ footer p{
+
+    text-align: center;
+} 
