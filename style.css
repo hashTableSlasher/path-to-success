@@ -72,19 +72,20 @@ header{
     margin:0 auto;
 }
 
-header section h1,p{
+header > h1, header > p{
     background-color: var(--purple);
     color:var(--white);}
 
     
-header section h1{
+header h1{
     padding-top: 40px;
     padding-bottom: 15px;
 }
-header section p{
+header p{
     padding-bottom: 40px;
     font-style: italic;
 }
+
 nav{
     background-color: var(--yellow);
     padding-top:8px;
@@ -120,6 +121,7 @@ nav li > a {
 }
 main{   
     background-color: var(--purple);
+    
 }
 main p{
     color:var(--Dark-gray);
@@ -134,14 +136,14 @@ h1{
     font-size: 3em;
     text-align: center;
 }
+h2,h3,h4{padding-left: 12px;}
+
 h2{ padding-top:12px;
     padding-bottom: 6px;
     font-size: 2em;
-    padding-left: 12px;
 }
 
 h3{
-    padding-left: 12px;
     color:var(--yellow);
     font-size: 1.5em ;
     font-weight: bold;
@@ -152,10 +154,9 @@ h4{
     font-weight: bold;
     font-size: 1.15em;
     color:var(--purple);
-    padding-left: 12px;
 }
 
-.wtBox{
+section section section{
     background-color: var(--white);
     border-radius: 4%;
     text-align: left;
@@ -163,24 +164,19 @@ h4{
     margin: 1em 1.5em;
     border: 1em;
 }
-#OurServices h3{
-    padding: 0px .5em;
-}
-#OurServices img{
-    padding: 12px 12px;
-}
-#OurServices p{
+
+section section section *{
     background-color: var(--white);
-    padding: 12px 12px;
+    padding: 5px 12px;
 }
-.whyChoose{
+
+main > section:nth-last-of-type(2){
     background-color: var(--Pink); 
     display: inline-block;
-    
-    /* justify-content: space-evenly; */
-} 
+    padding-top: 5px;
+}
 
-#grid-container{
+section>div{
     background-color: var(--Pink);
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -190,38 +186,30 @@ h4{
     gap: 16px;
 
 }
-.whyChoose h2{
-    padding-top: 15px;
-    padding-bottom: 0px;
-}
+
 
 div div{
-    /* justify-content: space-evenly; */
     font-size: larger;
     font-weight: bold;
     text-align: center;
-    /* border: var(--Pink) 12p solid; */
-    padding: 35px 6px; 
+    padding: 40px 6px; 
     border-radius: 15px;
     color: var(--Dark-gray);
 }
 
-#grid-container .teal{
+div div:first-child{
     background-color: var(--teal);
  
 }
-#grid-container .lavender{
+div div:nth-child(2){
     background-color: var(--lavender);
 }
-#grid-container .yellow{
+div div:nth-child(3){
     background-color: var(--yellow);
 }
-#grid-container .white{
+div div:last-child{
     background-color: var(--white);
 } 
-.pricing h3 {
-    padding:1px;
-}
 
 section table{
     background-color: var(--purple);
@@ -230,7 +218,12 @@ section table{
     padding:10px;
     
 }
-table .titles {
+table tr,td,th{
+    border: 2px solid var(--yellow);
+    background-color: var(--white);
+    padding: 15px 15px;
+}
+table tr>th {
     background-color: var(--yellow);
     font-weight: bold;
     font-size: medium;
@@ -238,26 +231,27 @@ table .titles {
     color:var(--Dark-gray);
 }
 
-table tr,td,th{
-    border: 2px solid var(--yellow);
-    background-color: var(--white);
-    padding: 15px 15px;
-}
 
-
-
-
-.first-step{
+main>div{
     background-color: var(--Pink);
-    color: var(--white);
+    color: var(--white); 
     padding:8px 5px;
     display:flex;
     flex-wrap:wrap;
     text-align: left;
 
 }
+main>div h2{
+    padding-bottom: 3px;
+} 
 
-.first-step  button {
+main>div p{
+    color:var(--white);
+    background-color: var(--Pink);
+    padding: 7px 12px;
+}
+
+ button {
     text-decoration: none;
     text-align: center;
     background-color: var(--white); 
@@ -273,15 +267,7 @@ table tr,td,th{
     margin: auto;
     
 }
-.first-step h2{
-    padding-bottom: 3px;
-}
 
-.first-step p{
-    color:var(--white);
-    background-color: var(--Pink);
-    padding: 7px 12px;
-}
 footer{
     margin-bottom: 2rem;
     padding: 55px;
@@ -292,19 +278,12 @@ footer{
     display:grid;
     gap:12px;
     font-size: smaller;
+    text-align: center;
     
    
 }
 footer a{
-    /* color: var(--white); */
-    text-align: center;
     display: inline;
     text-decoration: underline;
-    
-    
 }
 
- footer p{
-
-    text-align: center;
-} 
