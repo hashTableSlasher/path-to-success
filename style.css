@@ -1,3 +1,10 @@
+/* CSS BY Lilly/Liliana Mena */
+
+/* IMPORTED FONTS:*/ 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/* CSS RESET: */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -48,20 +55,22 @@ table {
     text-decoration: none;
 }
 
+/* ROOT VARIABLES: */
 :root{
-    --teal: #4CA7C0;
-    --purple: #484FB7;
-    --lavender: #6B8FE7;
-    --yellow:#E9BB57;
+    --Teal: #4CA7C0;
+    --Purple: #484FB7;
+    --Lavender: #6B8FE7;
+    --Yellow:#E9BB57;
     --Pink: #D9526F;
     --Dark-gray:#1E1E1E;
-    --white:#ffffff;
-    --box-shadow-lg: 3px 3px 4px 2px var(--Dark-gray);
+    --White:#ffffff;
+    --Box-shadow: 3px 3px 4px 2px var(--Dark-gray);
+    --BigHeaderFont:"Kavoon";
+    --Primary-font:"Inter";
 }
-
-
+/* GLOBAL STYLES (mobile first/small) :*/
 body{
-    background-color: var(--lavender);
+    background-color: var(--Lavender);
     font-family: "Inter";
     width: 450px;
     max-width: 450px;
@@ -69,12 +78,11 @@ body{
 }
 header{
     text-align: center;
-    margin:0 auto;
 }
 
 header > h1, header > p{
-    background-color: var(--purple);
-    color:var(--white);}
+    background-color: var(--Purple);
+    color:var(--White);}
 
     
 header h1{
@@ -87,7 +95,7 @@ header p{
 }
 
 nav{
-    background-color: var(--yellow);
+    background-color: var(--Yellow);
     padding-top:8px;
     padding-bottom: 20px;
     padding-left: 20px;
@@ -95,7 +103,7 @@ nav{
 }
 
 nav h2{
-    font-family: "Inter";
+    font-family: var(--Primary-font);
     color:var(--Dark-gray);
     font-size: 1.7em;
     font-weight: bold;
@@ -110,17 +118,17 @@ nav ul{
 }
 nav li{ 
     width: 400px;
-    background-color: var(--white);
+    background-color: var(--White);
     padding: 1em .3em;
 }
 nav li > a {
     text-transform: uppercase;
     text-decoration: none;
-    color:var(--purple);
+    color:var(--Purple);
     font-weight: bold;
 }
 main{   
-    background-color: var(--purple);
+    background-color: var(--Purple);
     
 }
 main p{
@@ -129,8 +137,8 @@ main p{
 }
 
 h1,h2{
-    color:var(--white);
-    font-family: "Kavoon";
+    color:var(--White);
+    font-family: var(--BigHeaderFont);
 }
 h1{
     font-size: 3em;
@@ -144,7 +152,7 @@ h2{ padding-top:12px;
 }
 
 h3{
-    color:var(--yellow);
+    color:var(--Yellow);
     font-size: 1.5em ;
     font-weight: bold;
     
@@ -153,11 +161,11 @@ h3{
 h4{
     font-weight: bold;
     font-size: 1.15em;
-    color:var(--purple);
+    color:var(--Purple);
 }
 
 section section section{
-    background-color: var(--white);
+    background-color: var(--White);
     border-radius: 4%;
     text-align: left;
     padding:12px;
@@ -166,7 +174,7 @@ section section section{
 }
 
 section section section *{
-    background-color: var(--white);
+    background-color: var(--White);
     padding: 5px 12px;
 }
 
@@ -198,33 +206,33 @@ div div{
 }
 
 div div:first-child{
-    background-color: var(--teal);
+    background-color: var(--Teal);
  
 }
 div div:nth-child(2){
-    background-color: var(--lavender);
+    background-color: var(--Lavender);
 }
 div div:nth-child(3){
-    background-color: var(--yellow);
+    background-color: var(--Yellow);
 }
 div div:last-child{
-    background-color: var(--white);
+    background-color: var(--White);
 } 
 
 section table{
-    background-color: var(--purple);
+    background-color: var(--Purple);
     display:grid;
     justify-content: center;
     padding:10px;
     
 }
 table tr,td,th{
-    border: 2px solid var(--yellow);
-    background-color: var(--white);
+    border: 2px solid var(--Yellow);
+    background-color: var(--White);
     padding: 15px 15px;
 }
 table tr>th {
-    background-color: var(--yellow);
+    background-color: var(--Yellow);
     font-weight: bold;
     font-size: medium;
     text-transform: uppercase;
@@ -234,7 +242,7 @@ table tr>th {
 
 main>div{
     background-color: var(--Pink);
-    color: var(--white); 
+    color: var(--White); 
     padding:8px 5px;
     display:flex;
     flex-wrap:wrap;
@@ -246,7 +254,7 @@ main>div h2{
 } 
 
 main>div p{
-    color:var(--white);
+    color:var(--White);
     background-color: var(--Pink);
     padding: 7px 12px;
 }
@@ -254,7 +262,7 @@ main>div p{
  button {
     text-decoration: none;
     text-align: center;
-    background-color: var(--white); 
+    background-color: var(--White); 
     color: var(--Dark-gray);
     font-weight: bold;
     font-size: medium;
@@ -263,7 +271,7 @@ main>div p{
     border: 0;
     border-radius: 15px;
     align-items: center;
-    box-shadow: var(--box-shadow-lg);
+    box-shadow: var(--Box-shadow);
     margin: auto;
     
 }
@@ -271,10 +279,10 @@ main>div p{
 footer{
     margin-bottom: 2rem;
     padding: 55px;
-    background-color: var(--purple);
+    background-color: var(--Purple);
     display:grid;
     grid-template-columns: 1fr 1fr;
-    color: var(--white);
+    color: var(--White);
     display:grid;
     gap:12px;
     font-size: smaller;
